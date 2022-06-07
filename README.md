@@ -9,7 +9,7 @@ The code here implements the acoustic map generation for the simulated cylinder 
 
 A demo file showcasing how to generate synthetic acoustic pressure maps and ground truth annotation maps of background, vessels, and skin curve is shown in file [demo.ipynb](notebooks/demo.ipynb)
 
-![Simulated acoustic pressure map, labels and individual tissue maps](/resources/sample.png "Sample simulation") 
+![Simulated acoustic pressure map, labels and individual tissue maps](resources/sample.png "Sample simulation") 
 
 ## Citation  
 
