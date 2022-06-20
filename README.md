@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 OA-armsim is a python module to simulate synthetic forearm acoustic pressure maps.   
-The code here implements the acoustic map generation for the simulated cylinder dataset (SCD) presented in Lafci, B., Ozdemir, F., Dean-Bean, X.L., Razansky D., and Perez-Cruz, F. (2022). OADAT: Experimental and Synthetic Clinical Optoacoustic Data for Standardized Image Processing. 
+The code here implements the acoustic map generation for the simulated cylinder dataset (SCD) presented in Berkan Lafci, Firat Ozdemir, Xosé Luís Deán-Ben, Daniel Razansky, and Fernando Perez-Cruz. OADAT: Experimental and synthetic clinical optoacoustic data for standardized image processing. arXiv preprint arXiv:2206.08612, 2022. 
 
 ## Demo
 
@@ -41,4 +41,16 @@ labels = utils.process_vessel_and_skinline(v=gt_vessels, sl=gt_skin)
 
 ## Citation  
 
-TBA
+Please cite to this work using the following Bibtex entry:
+```
+@article{lafci2022oadat,
+  doi = {10.48550/ARXIV.2206.08612},
+  url = {https://arxiv.org/abs/2206.08612},
+  author = {Lafci, Berkan and Ozdemir, Firat and Deán-Ben, Xosé Luís and Razansky, Daniel and Perez-Cruz, Fernando},
+  title = {{OADAT}: Experimental and Synthetic Clinical Optoacoustic Data for Standardized Image Processing},
+  publisher = {arXiv},
+  year = {2022},
+  copyright = {Creative Commons Attribution Non Commercial Share Alike 4.0 International},
+  journal={arXiv preprint arXiv:2206.08612},
+}
+```
