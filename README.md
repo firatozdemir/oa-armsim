@@ -1,18 +1,20 @@
 # OA-armsim
 
 [![launch - renku](https://renkulab.io/renku-badge.svg)](https://renkulab.io/projects/firat.ozdemir/oa-armsim/sessions/new?autostart=1)
-[![arXiv](https://img.shields.io/badge/preprint-arXiv-b31b1b.svg)](https://arxiv.org/abs/2206.08612)
+[![arXiv](https://img.shields.io/badge/Preprint-arXiv-b31b1b.svg)](https://arxiv.org/abs/2206.08612)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Data](https://img.shields.io/badge/Data-Research%20Collection-blue)](https://www.research-collection.ethz.ch/handle/20.500.11850/551512)
 
 OA-armsim is a python module to simulate synthetic forearm acoustic pressure maps.   
 The code here implements the acoustic map generation for the simulated cylinder dataset (SCD) presented in Berkan Lafci, Firat Ozdemir, Xosé Luís Deán-Ben, Daniel Razansky, and Fernando Perez-Cruz. OADAT: Experimental and synthetic clinical optoacoustic data for standardized image processing. arXiv preprint arXiv:2206.08612, 2022. 
-
+___
 ## Demo
 
 A demo file showcasing how to generate synthetic acoustic pressure maps and ground truth annotation maps of background, vessels, and skin curve is shown in file [demo.ipynb](notebooks/demo.ipynb)
 
 ![Simulated acoustic pressure map, labels and individual tissue maps](resources/sample.jpg "Sample simulation") 
 
+___
 ## Use
 
 Using GenerateVesselsAndSkinAndMasks class under [src/utils.py](src/utils.py), first define an object with the desired hyperparameters. 
@@ -39,7 +41,7 @@ gt_skin, gt_vessels = gt_multichannel[...,0], gt_multichannel[...,1]
 labels = utils.process_vessel_and_skinline(v=gt_vessels, sl=gt_skin)
 # Picture above has output in the order (acoustic_presure_map, labels, gt_skin, gt_vessels)
 ```
-
+___
 ## Citation  
 
 Please cite to this work using the following Bibtex entry:
@@ -55,3 +57,7 @@ Please cite to this work using the following Bibtex entry:
   journal={arXiv preprint arXiv:2206.08612},
 }
 ```
+___
+## oadat-evaluate
+
+You can find oadat-evaluate for reproducing the above manuscript at [oadat-evaluate](https://renkulab.io/gitlab/firat.ozdemir/oadat-evaluate).
